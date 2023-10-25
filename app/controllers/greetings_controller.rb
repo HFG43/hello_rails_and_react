@@ -1,2 +1,0 @@
-class GreetingsController < ApplicationController
-end
