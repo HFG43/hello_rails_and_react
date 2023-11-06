@@ -1,19 +1,19 @@
 import React from 'react';
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import store from '../Redux/store';
+import store from '../Redux/store';
 import Greeting from './Greeting';
 
 function App() {
   return (
-   <di>
-     <p>testeo</p>
-     <Router>
-       <Routes>
-         <Route path="/" element={<Greeting />} />
-       </Routes>
-     </Router>
-   </di>
+    <Provider store={store}>
+    <p>agolahola</p>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Greeting />} />
+        </Routes>
+      </Router>
+   </Provider>
   );
 }
 
